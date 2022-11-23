@@ -1,0 +1,314 @@
+@import 'fonts';
+@import 'mixins';
+@import 'variables';
+
+
+// PADDINGS===============================
+
+.main__ac {
+  padding: 80px 0;
+}
+
+.main__ac-2 {
+  padding: 80px 0;
+}
+
+.main__repair {
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .main__repair {
+    padding: 40px 0;
+  }
+
+  .main__ac {
+    padding: 40px 0;
+  }
+
+  .main__ac-2 {
+    padding: 40px 0;
+  }
+}
+
+// HEADER
+.header-services__body {
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(35, 67, 106, 0.7), rgba(35, 67, 106, 0.7)), url('../content/images/hvac.jpg') center no-repeat;
+}
+
+.header-services__body-content {
+  padding: 64px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.link-history {
+  display: flex;
+
+  .link-history__icon {
+    transform: rotate(180deg);
+    margin-right: 8px
+  }
+
+  .link-history__item {
+    @include title-body_2($grey_6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:last-child) {
+      margin-right: 8px
+    }
+  }
+}
+
+.header-services__body-title {
+  @include title_1($white_color, 48px);
+  text-align: center;
+  margin: 24px 0;
+}
+
+.header-services__body-text {
+  @include title_4($grey_1);
+}
+
+// REPAIR
+
+
+
+.hidden-image {
+  display: none;
+}
+
+.repair__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.repair__content {
+  max-width: 773px;
+  margin-right: 15px;
+}
+
+.repair__title {
+  @include title_2($grey_10);
+  margin-bottom: 24px;
+}
+
+.repair__text-list {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.repair__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.repair__text {
+  @include title_body_1($grey_8);
+}
+
+.repair__advantages {
+  @include title_body_1($grey_8);
+}
+
+.adv__item {
+  position: relative;
+  margin-left: 32px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: -32px;
+    top: 0;
+    background: url('../content/logos/check-circle.svg');
+  }
+}
+
+.repair__image-box {
+  border-radius: 8px;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+
+  }
+}
+
+// AC
+
+
+.ac__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.adaptive-image {
+  display: none;
+}
+
+
+.ac__image-box {
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.ac__content {
+  max-width: 572px;
+}
+
+.ac__heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.ac__subtitle {
+  @include title-body_2($blue_jade);
+  margin-bottom: 16px;
+}
+
+.ac__title {
+  @include title_2($grey_10);
+}
+
+.ac__text {
+  @include title-body_2($grey_8, 16px);
+  margin-bottom: 40px;
+}
+
+// AC-2
+
+
+.ac-2__inner {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.adaptive-image {
+  display: none;
+}
+
+.ac-2__content {
+  margin-left: 50px;
+}
+
+.ac-2__image-box {
+  border-radius: 8px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.ac-2__content {
+  max-width: 533px;
+}
+
+.ac-2__heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.ac-2__subtitle {
+  @include title-body_2($blue_jade);
+  margin-bottom: 16px;
+}
+
+.ac-2__title {
+  @include title_2($grey_10);
+}
+
+.ac-2__text {
+  @include title-body_2($grey_8, 16px);
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header-services__body {
+    height: 420px;
+    background-size: cover;
+    background-position: 55% 50%;
+  }
+
+  .header-services__body-title,
+  .header-services__body-text {
+    text-align: center;
+  }
+
+  .adaptive-image,
+  .hidden-image {
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .hidden-title {
+    display: block;
+  }
+
+  .ac__content,
+  .ac-2__content,
+  .repair__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .ac__heading,
+  .ac-2__heading {
+    text-align: center;
+  }
+
+  .ac__image-box,
+  .ac-2__image-box,
+  .repair__image-box {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .ac-2__title,
+  .ac__tittle,
+  .services__title,
+  .news__title,
+  .contact__heading {
+    font-size: 24px;
+  }
+
+  .news__subtitle {
+    margin-bottom: 16px;
+  }
+}
