@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="content/icon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-services-1.css">
   <title>Services</title>
@@ -386,25 +387,25 @@
               Book an <span>Appointment</span>
             </h2>
             <div class="input-name input-item">
-              <input type="text" required name="name">
+              <input type="text" required name="name" aria-label="firstname">
               <p class="under-input__text">Please fill out this field</p>
               <label>Name</label>
             </div>
 
             <div class="input-email input-item">
-              <input type="text" required name="tel">
+              <input type="text" required name="email" aria-label="email">
               <p class="under-input__text">Please fill out this field</p>
               <label>Email</label>
             </div>
 
             <div class="input-phone input-item">
-              <input type="tel" required name="tel">
+              <input type="tel" required name="tel" aria-label="phone number">
               <p class="under-input__text">Please fill out this field</p>
               <label>Phone</label>
             </div>
 
             <div class="select-wrapper">
-              <select name="interest" class="select input-item">
+              <select name="interest" class="select input-item" aria-label="choose your">
                 <option value="1">Interested in...</option>
                 <option value="2">Startup</option>
                 <option value="3">Competitor</option>
@@ -415,7 +416,7 @@
 
 
             <div class="check">
-              <input type="checkbox" name="check" required>
+              <input type="checkbox" name="check" required aria-label="accept privacy policy and terms conditions">
               <p class="check-text">I need help <a href="#"> Privacy Policy</a> and <a href="#">Terms Conditions</a>
               </p>
             </div>
