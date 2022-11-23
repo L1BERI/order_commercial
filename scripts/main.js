@@ -72,6 +72,13 @@ new Swiper('.news-swiper', {
     },
 
   },
+  preloadImages: false,
+  lazy: {
+    loadOnTransitionStart: false,
+    loadPrevNext: false,
+  },
+  watchSliderProgress: true,
+  watchSlidesVisibility: true,
 });
 
 new Swiper('.questions__swiper', {
@@ -111,7 +118,7 @@ new Swiper('.questions__swiper', {
 });
 new Swiper('.services__cards', {
 
-  // watchOverflow: false,
+  
   breakpoints: {
     315: {
       slidesPerView: 1,
@@ -143,4 +150,11 @@ new Swiper('.services__cards', {
     }
 
   },
+  preloadImages: false,
+  lazy: {
+    loadOnTransitionStart: false,
+    loadPrevNext: false,
+  },
+  watchSliderProgress: true,
+  watchSlidesVisibility: true,
 });
