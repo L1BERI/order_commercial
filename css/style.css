@@ -582,7 +582,7 @@ body {
   max-width: 1440px;
   overflow: hidden;
   margin: 0 auto;
-  background: url(../content/images/contact-form-back.jpg) center no-repeat;
+  background: url('../content/images/contact-form-back.webp') center no-repeat;
 }
 .contact .container {
   padding: 0;
@@ -820,7 +820,7 @@ body {
 }
 
 .hvac {
-  background: url(../content/images/hvac.jpg) center no-repeat;
+  background: url('../content/images/hvac.webp') center no-repeat;
 }
 
 .hvac__inner {
