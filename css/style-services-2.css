@@ -614,6 +614,12 @@
   .testimonials__content-title {
     font-size: 24px;
   }
+  .logotypes__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .subscribe {
     background: #23436A;
   }
@@ -693,6 +699,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .brand__list-left {
+    margin-right: 32px;
   }
   .logo {
     margin-right: 30px;
